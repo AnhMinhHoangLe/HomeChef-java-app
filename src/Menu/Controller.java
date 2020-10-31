@@ -14,9 +14,15 @@ import javafx.stage.Stage;
 
 public class Controller implements Initializable{
 	
-
+	//Declare the present buttons on menu page
     @FXML private Button playMenuButton, helpMenuButton, recipesMenuButton ;
-        //MENU
+    
+    /**
+     * Create a menu function to change page
+     * 
+     * @param event
+     * @throws Exception
+     */
     @FXML
     public void Menu(ActionEvent event) throws Exception{
         	 Stage appStage;
@@ -51,11 +57,16 @@ public class Controller implements Initializable{
             appStage.show();
         }
 
-        //        Game exit
+        /**
+         * Exit the game function
+         * 
+         * @param event
+         */
         public void exitMenu(ActionEvent event){
         	Platform.exit();
             System.exit(0);
         }
+
 
     @Override
     public void initialize(URL url, ResourceBundle rb){

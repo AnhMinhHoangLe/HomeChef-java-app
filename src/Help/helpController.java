@@ -11,8 +11,14 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class helpController implements Initializable{
-    @FXML private Button backButton ;
+    @FXML private Button backButton ; // Declare BACK button
 
+    /**
+     * Create a BACK button to main menu
+     * 
+     * @param event
+     * @throws Exception
+     */
     public void backToMenu(ActionEvent event) throws Exception{
         Stage appStage;
         Parent root;

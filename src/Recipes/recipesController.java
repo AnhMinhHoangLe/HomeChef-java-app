@@ -14,15 +14,20 @@ import javafx.scene.control.Button;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TitledPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 
 public class recipesController implements Initializable{
     @FXML private Button backButton ;
-    @FXML private TitledPane recipes, info_recipes;
+    @FXML private VBox recipes, info_recipes;
 
-    //Back button
+    /**
+     * Create a function to "BACK" button to go back to main menu
+     * 
+     * @param event
+     * @throws Exception
+     */
     @FXML
     public void backToMenu(ActionEvent event) throws Exception {
         Stage appStage;
@@ -39,6 +44,16 @@ public class recipesController implements Initializable{
         appStage.setScene(scene);
         appStage.show();
     }
+    
+    /**
+     * Create and function the recipe panel
+     */
+//    @FXML
+//    public recipePanel() {
+//    	
+//    }
+//    
+    
 //
 //    @FXML
 //    public void recipes(Stage stage) throws Exception {

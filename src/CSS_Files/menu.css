@@ -1,5 +1,5 @@
 .root{
-        -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #ff758c, #ff7eb3);
+        -fx-background-color: #000000 ;
 }
 #playMenuButton, #helpMenuButton, #recipesMenuButton, #exitMenuButton{
         -fx-text-fill: crimson; 
@@ -14,6 +14,6 @@
 
 }
 #title{
-        -fx-text-fill: #ffffff; 
+        -fx-fill: #ffffff; 
         -fx-font-size: 96px; 
 }
