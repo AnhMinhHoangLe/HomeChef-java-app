@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Text?>
 
-<?import javafx.scene.layout.AnchorPane?>
-
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" />
+<VBox alignment="CENTER" prefHeight="900.0" prefWidth="1600.0" spacing="70.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Play.playController">
+   <children>
+      <Text   fx:id="title" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="CHOOSE A LEVEL" textAlignment="CENTER" wrappingWidth="637.4140625"></Text>
+      <Button fx:id="easyLevel" mnemonicParsing="false" prefHeight="74.0" prefWidth="260.0" text="EASY" />
+      <Button fx:id="mediumLevel" mnemonicParsing="false"  prefHeight="74.0" prefWidth="260.0" text="MEDIUM" />
+      <Button fx:id="hardLevel" mnemonicParsing="false" prefHeight="74.0" prefWidth="260.0" text="HARD" />
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#backToMenu" prefHeight="74.0" prefWidth="260.0" text="BACK" />
+   </children>
+</VBox>

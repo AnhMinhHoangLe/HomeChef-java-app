@@ -10,14 +10,6 @@
 <VBox alignment="CENTER" prefHeight="900.0" prefWidth="1600.0" spacing="70.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Menu.Controller">
    <children>
       <Text fx:id="title" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="HomeChef" textAlignment="CENTER" wrappingWidth="637.4140625">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop color="BLACK" />
-                  <Stop color="WHITE" offset="1.0" />
-               </stops>
-            </LinearGradient>
-         </fill>
       </Text>
       <Button fx:id="playMenuButton" mnemonicParsing="false" onAction="#Menu" prefHeight="74.0" prefWidth="260.0" text="PLAY" />
       <Button fx:id="helpMenuButton" mnemonicParsing="false" onAction="#Menu" prefHeight="74.0" prefWidth="260.0" text="HELP" />
