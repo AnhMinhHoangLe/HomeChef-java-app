@@ -22,7 +22,8 @@ import javafx.stage.Stage;
 public class playController implements Initializable{
     @FXML private Button backButton, easyLevel, mediumLevel, hardLevel ;
 
-    /**
+
+	/**
      * Create a function to "BACK" button to go back to main menu
      * 
      * @param event
@@ -45,122 +46,72 @@ public class playController implements Initializable{
         appStage.show();
     }
     
+    /*
+     * To get the result of difficulty level after clicking one of three buttons.
+     * @param event
+     * @throws Exception
+     */
     @FXML
-    public void easyLevel(ActionEvent event) throws Exception{
-    	 
-         
-    	File f = new File("./src/images/easy_recipes");
-        Random r = new Random();
-        String[] fileList = f.list();
-        int index = r.nextInt(fileList.length);
-        try {
-//           PlayingGamePanelController(fileList[index], "easy");
+    public void difficultyLevel(ActionEvent event) throws Exception{
+        	 Stage appStage;
+        	
+        		Parent root; 
+           		String link = ""; 
+           		String linkCSS = ""; 
 
-        	Stage appStage;
-            Parent root;
 
-            String link = "./PlayingGamePanel.fxml";
-//            String linkCSS = "../CSS_Files/menu.css";
+        	File f; 
+        	int index;
+        	String[] fileList; 
+            String statusDifficulty; 
+            
+            //Easy level, medium level, hard level
+             if(event.getSource()== easyLevel)
+             {
+            	 f = new File("./src/images/easy_recipes");
+                 appStage =(Stage) easyLevel.getScene().getWindow();
+                 statusDifficulty = "easy"; 
+             }
+             else if(event.getSource()== mediumLevel)
+             {
+                 appStage =(Stage) mediumLevel.getScene().getWindow();
+            	 f = new File("./src/images/medium_recipes");
+                 statusDifficulty = "medium"; 
 
-            appStage = (Stage) easyLevel.getScene().getWindow();
+             }
+             else
+             {
+            	f = new File("./src/images/hard_recipes");
+                appStage =(Stage) hardLevel.getScene().getWindow();
+                statusDifficulty = "hard"; 
+
+             }
+             
+             
+          // to pick the random order of recipes in picked difficulty level
+             Random r = new Random(); 
+             fileList = f.list();
+             index = r.nextInt(fileList.length); 
+
+             //Change Stage to gaming
+             link = "./PlayingGamePanel.fxml";
+//          linkCSS = "../CSS_Files/menu.css";
 
             root = FXMLLoader.load(getClass().getResource(link));
-            Scene scene = new Scene(root);
-//            scene.getStylesheets().add(getClass().getResource(linkCSS).toExternalForm());
+            Scene scene = new Scene(root, 1600, 900);
+            scene.getStylesheets().add(getClass().getResource(linkCSS).toExternalForm());
             appStage.setScene(scene);
             appStage.show();
-        } catch (IOException e1) {
-            e1.printStackTrace();
+            
+            
+            PlayingGame.playingGamePanel(fileList[index], statusDifficulty ); 
         }
-    
-
-    }
-    
-    @FXML
-    public void mediumLevel(ActionEvent event) throws Exception{
-    	 
-         
-    	File f = new File("./src/images/medium_recipes");
-        Random r = new Random();
-        String[] fileList = f.list();
-        int index = r.nextInt(fileList.length);
-        try {
-
-//         PlayingGamePanelController(fileList[index], "medium");
-
-        	Stage appStage;
-            Parent root;
-
-            String link = "./PlayingGamePanel.fxml";
-//            String linkCSS = "../CSS_Files/menu.css";
-
-            appStage = (Stage) easyLevel.getScene().getWindow();
-
-            root = FXMLLoader.load(getClass().getResource(link));
-            Scene scene = new Scene(root);
-//            scene.getStylesheets().add(getClass().getResource(linkCSS).toExternalForm());
-            appStage.setScene(scene);
-            appStage.show();
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
- 
-
-    }
-    
-    @FXML
-    public void hardLevel(ActionEvent event) throws Exception{
-    	 
-         
-    	File f = new File("./src/images/hard_recipes");
-        Random r = new Random();
-        String[] fileList = f.list();
-        int index = r.nextInt(fileList.length);
-        try {
-        	 
-//        	PlayingGamePanelController(fileList[index], "hard");
+  
 
 
-        	Stage appStage;
-            Parent root;
-
-            String link = "./PlayingGamePanel.fxml";
-//            String linkCSS = "../CSS_Files/menu.css";
-
-            appStage = (Stage) easyLevel.getScene().getWindow();
-
-            root = FXMLLoader.load(getClass().getResource(link));
-            Scene scene = new Scene(root);
-//            scene.getStylesheets().add(getClass().getResource(linkCSS).toExternalForm());
-            appStage.setScene(scene);
-            appStage.show();
-        } catch (IOException e1) {
-            e1.printStackTrace();
-        }
-    
-    }
-    
-    
-
-
-//	private  ImageView realDish;
-//	private ImageView kitchenToolImage; 
-//	private TabPane listFoods; 
-//	private VBox kitchenTools; 
-//	String item = "None";
-
-
-
-//	public void PlayingGamePanelController(String recipeName, String difficulty) throws IOException {
-//    	String recipePicked = recipeName;
-//    	
-//    	File file = new File("./src/images/final dish_full/"+recipeName.replace(".txt", ".png"));  
-//		Image image = new Image(file.toURI().toString());
-//		realDish.setImage(image);
-//	}
 
     @Override
-    public void initialize(URL url, ResourceBundle rb){
+    public void initialize(URL url, ResourceBundle rb ){
     	
     }
 }

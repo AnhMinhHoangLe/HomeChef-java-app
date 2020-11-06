@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Play.playController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Play.PlayingGame">
    <children>
       <ImageView fx:id="realDish" fitHeight="183.0" fitWidth="230.0" layoutX="35.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
       <TabPane fx:id="listFoods" layoutX="403.0" layoutY="29.0" prefHeight="200.0" prefWidth="848.0" tabClosingPolicy="UNAVAILABLE">

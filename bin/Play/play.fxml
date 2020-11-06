@@ -7,9 +7,9 @@
 <VBox alignment="CENTER" prefHeight="900.0" prefWidth="1600.0" spacing="70.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Play.playController">
    <children>
       <Text fx:id="title" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="CHOOSE A LEVEL" textAlignment="CENTER" wrappingWidth="637.4140625" />
-      <Button fx:id="easyLevel" mnemonicParsing="false" onAction="#easyLevel" prefHeight="74.0" prefWidth="260.0" text="EASY" />
-      <Button fx:id="mediumLevel" mnemonicParsing="false" onAction="#mediumLevel" prefHeight="74.0" prefWidth="260.0" text="MEDIUM" />
-      <Button fx:id="hardLevel" mnemonicParsing="false" onAction="#hardLevel" prefHeight="74.0" prefWidth="260.0" text="HARD" />
+      <Button fx:id="easyLevel" mnemonicParsing="false" onAction="#difficultyLevel" prefHeight="74.0" prefWidth="260.0" text="EASY" />
+      <Button fx:id="mediumLevel" mnemonicParsing="false" onAction="#difficultyLevel" prefHeight="74.0" prefWidth="260.0" text="MEDIUM" />
+      <Button fx:id="hardLevel" mnemonicParsing="false" onAction="#difficultyLevel" prefHeight="74.0" prefWidth="260.0" text="HARD" />
       <Button fx:id="backButton" mnemonicParsing="false" onAction="#backToMenu" prefHeight="74.0" prefWidth="260.0" text="BACK" />
    </children>
 </VBox>
