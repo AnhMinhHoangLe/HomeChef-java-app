@@ -17,15 +17,15 @@
          </font>
       </Text>
       <Button fx:id="backButton" layoutX="721.0" layoutY="824.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="46.0" prefWidth="158.0" text="BACK" />
-      <VBox id="recipes" alignment="CENTER" layoutX="375.0" layoutY="294.0" prefHeight="363.0" prefWidth="346.0">
+      <VBox id="recipes" fx:id="recipes" alignment="CENTER" layoutX="375.0" layoutY="294.0" prefHeight="363.0" prefWidth="346.0">
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Recipes" textAlignment="CENTER" wrappingWidth="345.99212646484375">
                <font>
                   <Font size="36.0" />
                </font>
             </Text>
-            <VBox fx:id="recipes" prefHeight="421.0" prefWidth="346.0" />
-         </children></VBox>
+         </children>
+      </VBox>
       <VBox id="recipes_info" fx:id="recipes_info" alignment="CENTER" layoutX="879.0" layoutY="242.0" prefHeight="468.0" prefWidth="592.0">
          <children>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Info" textAlignment="CENTER" wrappingWidth="345.99212646484375">

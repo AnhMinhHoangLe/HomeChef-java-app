@@ -1,2 +1,0 @@
-# Lambda
-![](./lambda.PNG)

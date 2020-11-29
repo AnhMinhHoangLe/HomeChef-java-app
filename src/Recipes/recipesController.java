@@ -135,7 +135,7 @@ public class recipesController implements Initializable{
                 label.setDisable(true); // to make the textarea disable for user adding or typing. 
                 
                 //Print the big image on the side textarea
-            	File file = new File("./src/images/final dish_full/" + list.getSelectionModel().getSelectedItem()+".png");  
+            	File file = new File("./src/images/final_dish_full/" + list.getSelectionModel().getSelectedItem()+".png");  
 		        Image image = new Image(file.toURI().toString());
 				recipe_image.setImage(image);
 //				System.out.println("./src/images/final dish/" + list.getSelectionModel().getSelectedItem()+"/png"); 

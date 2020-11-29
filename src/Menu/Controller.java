@@ -29,11 +29,11 @@ public class Controller implements Initializable{
         	 Parent root; 
         	 
         	 String link = ""; 
-        	String linkCSS = ""; 
+        	 String linkCSS = ""; 
         	 
              if(event.getSource()==playMenuButton)
              {
-                 appStage =(Stage) playMenuButton.getScene().getWindow();
+                 appStage = (Stage) playMenuButton.getScene().getWindow();
                  link = "../Play/play.fxml";
                  linkCSS="../CSS_Files/play.css";
              }
