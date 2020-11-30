@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml ver
+sion="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
@@ -9,7 +10,7 @@
 <VBox alignment="CENTER" prefHeight="900.0" prefWidth="1600.0" spacing="70.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Help.helpController">
    <children>
       <Text fx:id="text_help"    strokeType="OUTSIDE" strokeWidth="0.0" text="HOW TO PLAY" textAlignment="CENTER"></Text>
-      <Text fx:id="text_help1" strokeType="OUTSIDE" strokeWidth="0.0" text="Guess the recipe! Click on item then click on the pot. Once you reach the required number of ingredient you either win or lose  depending on whether you selected the correct order" wrappingWidth="863.806640625">
+      <Text fx:id="text_help_content" strokeType="OUTSIDE" strokeWidth="0.0" text="Guess the recipe! Click on item then click on the pot. Once you reach the required number of ingredient you either win or lose  depending on whether you selected the correct order" wrappingWidth="863.806640625">
          <font>
             <Font size="37.0" />
          </font></Text>

@@ -1,19 +1,26 @@
 .root{
-        -fx-background-color: #000000 ;
+        -fx-background-color: #000000;
 }
 #playMenuButton, #helpMenuButton, #recipesMenuButton, #exitMenuButton{
-        -fx-text-fill: crimson; 
+        -fx-text-fill: #000000; 
+        -fx-font-weight: bold; 
+        -fx-font-size: 25px
+}
+#playMenuButton{
+	 -fx-background-color: #ec4c34;
+	
 }
 #helpMenuButton{
-
+	-fx-background-color: #ec4c34;
 }
 #recipesMenuButton{
-
+	-fx-background-color: #ef6f3a;
+	
 }
 #exitMenuButton{
-
+	 -fx-background-color: #f3ab4f;
 }
 #title{
-        -fx-fill: #ffffff; 
-        -fx-font-size: 96px; 
+        -fx-fill: #fffa7a; 
+        -fx-font-size: 96px;    
 }

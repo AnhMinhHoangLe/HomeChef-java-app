@@ -1,9 +1,14 @@
-
-#text_help{
-        -fx-font-size: 96px; 
+.root{
+        -fx-background-color: #000000 ;
+	-fx-fill: #ffffff;
 }
-#text_help1{
-        -fx-font-size: 50px; 
+#text_help{
+        -fx-font-size: 96px;
+	-fx-fill: #ffffff;
+}
+#text_help_content{
+        -fx-font-size: 30px; 
+	-fx-fill: #ffffff;
 
 }
 #backButton{
