@@ -25,7 +25,7 @@
          <children>
             <Text fx:id="title" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="HomeChef" textAlignment="CENTER" wrappingWidth="637.4140625">
                <font>
-                  <Font name="Algerian" size="69.0" />
+                  <Font name="Algerian"/>
                </font>
             </Text>
             <Button fx:id="playMenuButton" mnemonicParsing="false" onAction="#Menu" prefHeight="74.0" prefWidth="312.0" text="PLAY" />

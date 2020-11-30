@@ -11,7 +11,8 @@ Ingredients:
 8. Ketchup, mustard, mayonnaise
 
 Procedure:
-Step 1: Cover the hamburger buns with thin layers of ketchup, mustard, and mayonnaise
+Step 1: Cover the hamburger buns with thin layers of 
+        ketchup, mustard, and mayonnaise
 Step 2: Place lettuce on the bottom bun
 Step 3: Put tomato slices on top of the lettuce
 Step 4: Place the grilled burger after that

@@ -16,24 +16,20 @@
         <tabs>
           <Tab fx:id="raw" text="Meat" />
           <Tab fx:id="rice_wheat" text="Rice/White" />
-            <Tab fx:id="vegetables" text="Vegetables" />
-            <Tab fx:id="sauce" text="Sauce" />
-            <Tab fx:id="kitchen_tools" text="Kitchen Tools" />
+          <Tab fx:id="vegetables" text="Vegetables" />
+          <Tab fx:id="sauce" text="Sauce" />
+          <Tab fx:id="kitchen_tools" text="Kitchen Tools" />
         </tabs>
       </TabPane>
       <VBox layoutX="50.0" layoutY="229.0" prefHeight="434.0" prefWidth="230.0">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Items Selected" textAlignment="CENTER" wrappingWidth="230.13671875">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Text>
+            <Text fx:id="dish_image" strokeType="OUTSIDE" strokeWidth="0.0" text="Dish Image" textAlignment="CENTER" wrappingWidth="230.13671875" />
          </children>
          <VBox fx:id="selectedItemsBox" />
       </VBox>
       <Button fx:id="kitchenToolImage" layoutX="630.0" layoutY="400.0" mnemonicParsing="false" onAction="#GameComplete" maxHeight="200.0" maxWidth="400.0" />
       <!-- <ImageView fx:id="kitchenToolImage" fitHeight="288.0" fitWidth="443.0" layoutX="579.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true" />-->
-      <Button fx:id="backButton" layoutX="731.0" layoutY="834.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="46.0" prefWidth="158.0" text="BACK" />
-      <Button fx:id="hintButton" layoutX="85.0" layoutY="665.0" mnemonicParsing="false" onAction="#showHint" prefHeight="46.0" prefWidth="158.0" text="Hint Me!" />
+      <Button fx:id="backButton" layoutX="731.0" layoutY="834.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="46.0" prefWidth="158.0" text="Back" />
+      <Button fx:id="hintButton" layoutX="85.0" layoutY="665.0" mnemonicParsing="false" onAction="#showHint" prefHeight="46.0" prefWidth="158.0" text="Hint" />
    </children>
 </Pane>

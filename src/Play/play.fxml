@@ -1,15 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" prefHeight="900.0" prefWidth="1600.0" spacing="70.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Play.playController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Play.playController">
    <children>
-      <Text fx:id="title" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="CHOOSE A LEVEL" textAlignment="CENTER" wrappingWidth="637.4140625" />
-      <Button fx:id="easyLevel" mnemonicParsing="false" onAction="#difficultyLevel" prefHeight="74.0" prefWidth="260.0" text="EASY" />
-      <Button fx:id="mediumLevel" mnemonicParsing="false" onAction="#difficultyLevel" prefHeight="74.0" prefWidth="260.0" text="MEDIUM" />
-      <Button fx:id="hardLevel" mnemonicParsing="false" onAction="#difficultyLevel" prefHeight="74.0" prefWidth="260.0" text="HARD" />
-      <Button fx:id="backButton" mnemonicParsing="false" onAction="#backToMenu" prefHeight="74.0" prefWidth="260.0" text="BACK" />
+      <Pane prefHeight="900.0" prefWidth="711.0">
+         <children>
+            <ImageView fitHeight="284.0" fitWidth="220.0" layoutX="42.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Resources/2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <VBox alignment="CENTER" prefHeight="900.0" prefWidth="1600.0" spacing="70.0">
+         <children>
+            <Text fx:id="title" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick a Level" textAlignment="CENTER" wrappingWidth="637.4140625">
+               <font>
+                  <Font name="Algerian" />
+               </font></Text>
+            <Line endX="195.2928924560547" endY="0.7928932309150696" startX="-100.0" stroke="#fffa7a" />
+            <Button fx:id="easyLevel" mnemonicParsing="false" onAction="#difficultyLevel" prefHeight="74.0" prefWidth="260.0" text="EASY" />
+            <Button fx:id="mediumLevel" mnemonicParsing="false" onAction="#difficultyLevel" prefHeight="74.0" prefWidth="422.0" text="MEDIUM" />
+            <Button fx:id="hardLevel" mnemonicParsing="false" onAction="#difficultyLevel" prefHeight="74.0" prefWidth="578.0" text="HARD" />
+         </children>
+      </VBox>
+      <Pane prefHeight="900.0" prefWidth="634.0">
+         <children>
+            <Button fx:id="backButton" layoutY="813.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="35.0" prefWidth="144.0" text="BACK" />
+         </children>
+      </Pane>
    </children>
-</VBox>
+</HBox>

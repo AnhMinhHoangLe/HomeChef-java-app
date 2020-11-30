@@ -1,16 +1,19 @@
 .root{
-        -fx-background-color: #000000 ;
-	-fx-fill: #ffffff;
+    -fx-background-color: #444444 ;
 }
 #text_help{
-        -fx-font-size: 96px;
-	-fx-fill: #ffffff;
+	-fx-fill: #fffa7a; 
+     -fx-font-size: 96px;  
 }
 #text_help_content{
-        -fx-font-size: 30px; 
+        -fx-font-size: 40px; 
 	-fx-fill: #ffffff;
 
 }
 #backButton{
+ -fx-font-weight: bold; 
+	-fx-font-size: 15px;  
+	-fx-background-color: #ffffff;		 
+	 
 	
-}
+} 

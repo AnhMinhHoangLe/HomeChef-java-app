@@ -95,7 +95,7 @@ public class playController implements Initializable {
 			
 			//Change Stage to gaming
 			link = "./PlayingGamePanel.fxml";
-			//linkCSS = "../CSS_Files/menu.css";
+			linkCSS = "../CSS_Files/playingGamePanel.css";
 			
 			root = FXMLLoader.load(getClass().getResource(link));
 			Scene scene = new Scene(root, 1600, 900);
