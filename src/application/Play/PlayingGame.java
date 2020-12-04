@@ -115,7 +115,7 @@ public class PlayingGame implements Initializable{
 		loadTab();
         
         //display the real dish image
-    	File file1 = new File("./src/images/final_dish_full/" +recipe.split(".txt")[0]+".png");  
+    	File file1 = new File("./src/application/images/final_dish_full/" +recipe.split(".txt")[0]+".png");  
         Image image1 = new Image(file1.toURI().toString());
         realDish.setImage(image1);
         
